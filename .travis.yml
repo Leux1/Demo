@@ -8,4 +8,5 @@ php:
  
 script:
   # Run your tests here.
+  - docker-compose up
   - echo 'Tested'
