@@ -2,7 +2,7 @@ services:
   - docker
 
 script:
-  - echo 'Test done'
+  - echo 'Tested'
 
 deploy:
   provider: elasticbeanstalk
