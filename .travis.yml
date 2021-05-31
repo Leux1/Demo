@@ -1,14 +1,17 @@
-language: php
-services: 
+services:
   - docker
- 
-sudo: false
- 
-php:
-  - 7.0
-  - 7.1
- 
+
 script:
-  # Run your tests here.
-  - docker-compose up CI=true
-  - echo 'Tested'
+  - echo 'Test done'
+
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: demo-licenta
+  env: Demolicenta-env
+  bucket_name: elasticbeanstalk-us-east-2-836810127342
+  bucket_path: licenta_demo
+  on:
+    branch: master
+  acces_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

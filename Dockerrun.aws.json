@@ -1,0 +1,21 @@
+{
+    "AWSEBDockerrunVersion": "3",
+    "containerDefinitions": [
+        {
+            "name": "wordpress",
+            "image": "wordpress:latest",
+            "hostname": "wordpress",
+            "essential": false,
+            "memory": 128
+        },
+        {
+            "name": "phpMyAdmin",
+            "image": "phpmyadmin/phpmyadmin",
+            "hostname": "phpMyAdmin",
+            "essential": false,
+            "memory": 128
+        }
+        
+
+    ]
+}
