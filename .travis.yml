@@ -5,7 +5,7 @@ script:
   - echo 'Tested'
 
 after_succes:
-    - docker-compose up
+    - docker-compose up -d
 
 deploy:
   provider: elasticbeanstalk
