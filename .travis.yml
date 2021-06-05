@@ -4,6 +4,9 @@ services:
 script:
   - echo 'Tested'
 
+after_succes:
+    - docker-compose up
+
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
