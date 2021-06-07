@@ -2,7 +2,7 @@ services:
   - docker
 
 script:
-  - echo 'Tested'
+  - echo 'test complete'
 
 after_succes:
     - docker-compose up -d
